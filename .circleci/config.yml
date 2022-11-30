@@ -53,7 +53,7 @@ jobs:
     machine: true
     resource_class: abhishekvarma12345/self-hosted-runner
     environment:
-      REPOSITORY: finance-complaint
+      REPOSITORY: finance-complaint-repo
       GAR_IMAGE_NAME: finance-complaint
       IMAGE_TAG: latest
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
