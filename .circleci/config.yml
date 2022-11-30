@@ -104,4 +104,5 @@ workflows:
           requires:
             - sanity-check
             - continuous-integration
-            - continuous-delivery      
+            - continuous-delivery     
+             
