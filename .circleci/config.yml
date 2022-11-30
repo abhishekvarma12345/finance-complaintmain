@@ -51,14 +51,14 @@ jobs:
 
   continuous-deployment:
     machine: true
-    resource_class: machine-learning-01/self-hosted-1
+    resource_class: abhishekvarma12345/self-hosted-runner
     environment:
       REPOSITORY: finance-complaint
       GAR_IMAGE_NAME: finance-complaint
       IMAGE_TAG: latest
       AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID}
       AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY}
-      AWS_DEFAULT_REGION: "ap-south-1"
+      AWS_DEFAULT_REGION: "eu-central-1"
       MONGO_DB_URL: ${MONGO_DB_URL}
     steps:
       - checkout
@@ -104,4 +104,4 @@ workflows:
           requires:
             - sanity-check
             - continuous-integration
-            - continuous-delivery
+            - continuous-delivery      
